@@ -1,4 +1,5 @@
 import { WHATSAPP_GROUP_LINK } from '../data/constants';
+import { trackWhatsAppLead } from '../utils/analytics';
 import { ArrowRight, Calendar, Clock, Smartphone, Sparkles } from 'lucide-react';
 
 export default function FinalCTA() {
@@ -62,6 +63,7 @@ export default function FinalCTA() {
               href={WHATSAPP_GROUP_LINK}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => trackWhatsAppLead(e, WHATSAPP_GROUP_LINK)}
               className="group relative inline-flex items-center justify-center gap-3 w-full sm:w-auto px-6 sm:px-14 py-4 sm:py-5 rounded-2xl text-base sm:text-2xl font-black text-black bg-amber-400 hover:bg-amber-300 active:scale-98 shadow-2xl shadow-orange-500/35 transition-all duration-200 shimmer-btn cursor-pointer font-display uppercase tracking-wider border border-amber-300/40"
             >
               <span className="relative z-10 flex items-center gap-3">

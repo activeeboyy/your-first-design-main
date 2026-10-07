@@ -1,4 +1,5 @@
 import { WHATSAPP_GROUP_LINK } from '../data/constants';
+import { trackWhatsAppLead } from '../utils/analytics';
 import Countdown from './Countdown';
 import {
   Calendar,
@@ -21,7 +22,7 @@ export default function Hero() {
         <div className="flex flex-col items-center text-center">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs sm:text-sm font-bold uppercase tracking-wider mb-4">
             <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-            <span>🎨 YOUR FIRST DESIGN! • FREE WHATSAPP CLASS • 18TH OCTOBER</span>
+            <span>FREE WHATSAPP CLASS • 18TH OCTOBER</span>
           </div>
 
           {/* Main Headline */}
@@ -125,6 +126,7 @@ export default function Hero() {
               href={WHATSAPP_GROUP_LINK}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => trackWhatsAppLead(e, WHATSAPP_GROUP_LINK)}
               className="group relative inline-flex items-center justify-center gap-3 w-full sm:w-auto px-7 sm:px-12 py-4 sm:py-5 rounded-2xl text-base sm:text-xl font-black text-black bg-amber-400 hover:bg-amber-300 active:scale-98 shadow-2xl shadow-orange-500/25 transition-all duration-200 shimmer-btn cursor-pointer font-display tracking-wider uppercase border border-amber-300/40"
             >
               <span className="relative z-10 flex items-center gap-3">

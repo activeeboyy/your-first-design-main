@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { WHATSAPP_GROUP_LINK, getGoogleCalendarUrl } from '../data/constants';
+import { trackWhatsAppLead } from '../utils/analytics';
 import { Calendar, Clock, Smartphone, Sparkles, ArrowRight, Share2, Check, ExternalLink } from 'lucide-react';
 
 export default function EventDetails() {
@@ -86,6 +87,7 @@ export default function EventDetails() {
               href={WHATSAPP_GROUP_LINK}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => trackWhatsAppLead(e, WHATSAPP_GROUP_LINK)}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-7 sm:px-12 py-4 sm:py-5 rounded-2xl text-base sm:text-lg font-black text-black bg-amber-400 hover:bg-amber-300 active:scale-98 shadow-xl shadow-orange-500/25 transition-all shimmer-btn cursor-pointer font-display uppercase tracking-wider border border-amber-300/40"
             >
               <span className="relative z-10 flex items-center gap-2.5">

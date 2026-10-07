@@ -1,5 +1,5 @@
 export const WHATSAPP_GROUP_LINK =
-  'https://chat.whatsapp.com/BnwneJ7MhU8E9i6HoZEIw5?s=hd&p=i&ilr=4&iam=2';
+  'https://chat.whatsapp.com/BnwneJ7MhU8E9i6HoZEIw5?s=cl&p=i&ilr=4&iam=2';
 
 export const EVENT_DETAILS = {
   name: 'YOUR FIRST DESIGN!',
@@ -10,7 +10,7 @@ export const EVENT_DETAILS = {
   time: '8:00 PM WAT',
   platform: 'LIVE ON WHATSAPP',
   cost: 'COMPLETELY FREE',
-  targetIsoDate: '2026-10-18T20:00:00+01:00', // 8PM West Africa Time (UTC+1)
+  targetIsoDate: '2026-10-17T20:00:00+01:00', // 10 days countdown target
 };
 
 // Generates Google Calendar link

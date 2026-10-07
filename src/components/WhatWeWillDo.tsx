@@ -1,4 +1,5 @@
 import { WHATSAPP_GROUP_LINK } from '../data/constants';
+import { trackWhatsAppLead } from '../utils/analytics';
 import { ArrowRight, Check } from 'lucide-react';
 
 const steps = [
@@ -106,6 +107,7 @@ export default function WhatWeWillDo() {
                     href={WHATSAPP_GROUP_LINK}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={(e) => trackWhatsAppLead(e, WHATSAPP_GROUP_LINK)}
                     className="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-xs sm:text-sm font-black text-black bg-amber-400 hover:bg-amber-300 transition-colors shadow-md shadow-orange-500/30 font-display uppercase tracking-wider border border-amber-300/40 cursor-pointer"
                   >
                     <span className="font-black text-black">Reserve My Spot</span>

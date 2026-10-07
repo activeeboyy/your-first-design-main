@@ -10,17 +10,42 @@ interface TimeLeft {
 
 export default function Countdown() {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
+    days: 10,
+    hours: 7,
+    minutes: 49,
+    seconds: 30,
   });
 
   useEffect(() => {
-    const target = new Date(EVENT_DETAILS.targetIsoDate).getTime();
+    const STORAGE_KEY = 'yfd_countdown_10d_target';
+    let target = 0;
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        target = Number(saved);
+      }
+    } catch {
+      // Fallback
+    }
+
+    if (!target || target <= Date.now()) {
+      const fixedTarget = new Date(EVENT_DETAILS.targetIsoDate).getTime();
+      const diffDays = Math.floor((fixedTarget - Date.now()) / (1000 * 60 * 60 * 24));
+      
+      if (diffDays === 10) {
+        target = fixedTarget;
+      } else {
+        // Anchor to 10 days, 7 hours, 49 mins
+        target = Date.now() + (10 * 24 * 3600 + 7 * 3600 + 49 * 60 + 30) * 1000;
+      }
+
+      try {
+        localStorage.setItem(STORAGE_KEY, String(target));
+      } catch {}
+    }
 
     const calculateTime = () => {
-      const now = new Date().getTime();
+      const now = Date.now();
       const difference = target - now;
 
       if (difference > 0) {

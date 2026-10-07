@@ -1,5 +1,4 @@
 import { WHATSAPP_GROUP_LINK } from '../data/constants';
-import PhotoshopMockup from './PhotoshopMockup';
 import Countdown from './Countdown';
 import {
   Calendar,
@@ -22,22 +21,14 @@ export default function Hero() {
         <div className="flex flex-col items-center text-center">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs sm:text-sm font-bold uppercase tracking-wider mb-4">
             <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-            <span>🎨 FREE WHATSAPP CLASS • 18TH OCTOBER</span>
+            <span>🎨 YOUR FIRST DESIGN! • FREE WHATSAPP CLASS • 18TH OCTOBER</span>
           </div>
 
           {/* Main Headline */}
-          <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold uppercase tracking-tight text-white max-w-5xl leading-[0.95] break-words">
-            YOUR FIRST <br className="hidden sm:inline" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-orange-100 to-orange-400">
-              DESIGN!
-            </span>{' '}
-            <span className="inline-block hover:rotate-12 transition-transform cursor-default">🎨</span>
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-white max-w-4xl leading-[1.05] tracking-tight font-display break-words">
+            Come, Let’s Create Your First Photoshop Design.{' '}
+            <span className="inline-block hover:rotate-12 transition-transform cursor-default select-none">🎨</span>
           </h1>
-
-          {/* Large Supporting Headline */}
-          <h2 className="mt-5 text-xl sm:text-3xl lg:text-4xl font-extrabold text-white max-w-3xl leading-snug tracking-tight font-display break-words">
-            Come, Let’s Create Your First Photoshop Design.
-          </h2>
 
           {/* Supporting Copy */}
           <div className="mt-5 max-w-2xl text-base sm:text-lg text-neutral-300 leading-relaxed space-y-2">
@@ -151,16 +142,6 @@ export default function Hero() {
               <span>WhatsApp Class</span>
             </div>
           </div>
-        </div>
-
-        {/* 100% CSS Interactive Photoshop Workspace Canvas Simulator */}
-        <div className="mt-16 sm:mt-20 w-full max-w-full overflow-hidden">
-          <div className="text-center mb-4">
-            <span className="text-xs uppercase font-mono tracking-widest text-neutral-400">
-              Interactive Preview · What You Will Be Creating On October 18
-            </span>
-          </div>
-          <PhotoshopMockup />
         </div>
       </div>
     </section>

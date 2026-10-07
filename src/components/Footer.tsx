@@ -5,7 +5,6 @@ export default function Footer() {
         <div>
           <div className="font-display font-extrabold text-xl sm:text-2xl text-white flex items-center justify-center md:justify-start gap-2 tracking-tight break-words">
             <span>YOUR FIRST DESIGN!</span>
-            <span>🎨</span>
           </div>
           <div className="text-neutral-300 font-medium text-sm mt-1">
             Come, Let’s Create Your First Photoshop Design.

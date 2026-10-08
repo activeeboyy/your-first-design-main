@@ -22,7 +22,7 @@ export default function Hero() {
         <div className="flex flex-col items-center text-center">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs sm:text-sm font-bold uppercase tracking-wider mb-4">
             <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-            <span>FREE 3-DAY WHATSAPP CLASS • 18TH – 20TH OCTOBER</span>
+            <span>FREE 3 DAYS WHATSAPP CLASS</span>
           </div>
 
           {/* Main Headline */}

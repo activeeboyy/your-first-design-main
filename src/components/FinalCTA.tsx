@@ -41,11 +41,11 @@ export default function FinalCTA() {
           <div className="hidden sm:flex mt-6 flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs sm:text-sm font-mono text-neutral-300">
             <span className="flex items-center gap-1.5 bg-white/[0.04] px-3.5 py-1.5 rounded-full border border-white/10">
               <Calendar className="w-4 h-4 text-orange-400" />
-              18th October 2026
+              18th – 20th October 2026
             </span>
             <span className="flex items-center gap-1.5 bg-white/[0.04] px-3.5 py-1.5 rounded-full border border-white/10">
               <Clock className="w-4 h-4 text-amber-400" />
-              8:00 PM WAT
+              8:00 PM WAT Daily
             </span>
             <span className="flex items-center gap-1.5 bg-white/[0.04] px-3.5 py-1.5 rounded-full border border-white/10">
               <Smartphone className="w-4 h-4 text-emerald-400" />
@@ -53,7 +53,7 @@ export default function FinalCTA() {
             </span>
             <span className="flex items-center gap-1.5 bg-white/[0.04] px-3.5 py-1.5 rounded-full border border-white/10">
               <Sparkles className="w-4 h-4 text-orange-300" />
-              100% FREE
+              100% FREE (3 Days)
             </span>
           </div>
 

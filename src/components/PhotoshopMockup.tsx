@@ -41,7 +41,7 @@ export default function PhotoshopMockup() {
             Ps
           </div>
           <span className="font-medium text-neutral-200 truncate">
-            YOUR_FIRST_DESIGN_OCT18.psd <span className="text-neutral-500">@ 100% (RGB/8#)</span>
+            YOUR_FIRST_DESIGN_OCT18_20.psd <span className="text-neutral-500">@ 100% (RGB/8#)</span>
           </span>
         </div>
         <div className="hidden sm:flex items-center gap-4 text-neutral-400 text-[11px]">
@@ -208,7 +208,7 @@ export default function PhotoshopMockup() {
                 <span className="text-[10px] tracking-[0.25em] font-mono-num uppercase text-cyan-400 font-semibold block">
                   LIVE WORKSHOP
                 </span>
-                <span className="text-xs text-neutral-400 font-medium">OCTOBER 18 · 8:00 PM</span>
+                <span className="text-xs text-neutral-400 font-medium">OCTOBER 18 – 20 · 8:00 PM</span>
               </div>
               <div className="text-right">
                 <span className="text-[10px] font-mono-num text-neutral-500">100% FREE</span>

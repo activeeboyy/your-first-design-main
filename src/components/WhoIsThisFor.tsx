@@ -8,7 +8,7 @@ const audiences = [
   { emoji: '💼', title: 'Entrepreneurs & Founders', desc: 'Wanting to design their own brand banners, product flyers and promos.' },
   { emoji: '📱', title: 'Content creators', desc: 'Needing cleaner, sharper, scroll-stopping social media graphics.' },
   { emoji: '💡', title: 'Anyone curious about graphic design', desc: 'Always wondered how real designers think and structure visual hierarchy.' },
-  { emoji: '🔥', title: 'Anyone saying “I’ll learn someday”', desc: 'October 18 is your date to finally show up and do it.' },
+  { emoji: '🔥', title: 'Anyone saying “I’ll learn someday”', desc: 'October 18–20 is your time to finally show up and do it without rushing.' },
 ];
 
 export default function WhoIsThisFor() {

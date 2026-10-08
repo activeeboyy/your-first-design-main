@@ -17,7 +17,7 @@ export default function EventDetails() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="font-display text-3xl sm:text-5xl lg:text-6xl font-extrabold uppercase tracking-tight text-white leading-tight break-words">
-            SAVE THE DATE 📅
+            SAVE THE DATE
           </h2>
           <p className="mt-3 text-neutral-300 text-base sm:text-lg">
             Mark your calendar now so you don’t miss when the group goes live.
@@ -31,7 +31,7 @@ export default function EventDetails() {
 
           <div className="text-center">
             <div className="text-xs font-mono font-bold tracking-widest uppercase text-orange-400">
-              FREE LIVE WHATSAPP CLASS
+              FREE LIVE 3-DAY WHATSAPP CLASS
             </div>
             <div className="mt-2 font-display text-3xl sm:text-5xl font-extrabold uppercase text-white tracking-tight break-words">
               YOUR FIRST DESIGN!
@@ -45,8 +45,8 @@ export default function EventDetails() {
                 <Calendar className="w-5 h-5" />
               </div>
               <div>
-                <div className="text-xs text-neutral-400 font-mono uppercase">DATE</div>
-                <div className="font-display font-bold text-base sm:text-lg text-white">18TH OCTOBER 2026</div>
+                <div className="text-xs text-neutral-400 font-mono uppercase">DATES (3 DAYS)</div>
+                <div className="font-display font-bold text-base sm:text-lg text-white">18TH – 20TH OCTOBER 2026</div>
               </div>
             </div>
 
@@ -56,7 +56,7 @@ export default function EventDetails() {
               </div>
               <div>
                 <div className="text-xs text-neutral-400 font-mono uppercase">TIME</div>
-                <div className="font-display font-bold text-base sm:text-lg text-white">8:00 PM WAT</div>
+                <div className="font-display font-bold text-base sm:text-lg text-white">8:00 PM WAT DAILY</div>
               </div>
             </div>
 

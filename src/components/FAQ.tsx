@@ -10,7 +10,7 @@ const faqs: FAQItem[] = [
   {
     question: 'Is this class really 100% free?',
     answer:
-      'Yes, it is completely free. The class takes place on 18th October 2026 at 8:00 PM WAT.',
+      'Yes, it is completely free. The class runs across three days from 18th to 20th October 2026 at 8:00 PM WAT daily so nobody is rushed.',
   },
   {
     question: 'Do I need previous Photoshop experience?',
@@ -28,9 +28,9 @@ const faqs: FAQItem[] = [
       'The class takes place live on WhatsApp inside our private group. You’ll receive updates, links, and direct guidance inside the group.',
   },
   {
-    question: 'What time does the class start?',
+    question: 'What time does the class start and how is it scheduled?',
     answer:
-      'The class starts at 8:00 PM West Africa Time (WAT) on Sunday, 18th October 2026. Make sure to join the WhatsApp group ahead of time so you are ready when we start.',
+      'The class runs for 3 days from Sunday, 18th October to Tuesday, 20th October 2026, starting at 8:00 PM West Africa Time (WAT) each evening. Spreading it across three days ensures you have plenty of breathing room to absorb graphic design principles and practice without rushing.',
   },
 ];
 

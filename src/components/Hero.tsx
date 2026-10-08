@@ -22,7 +22,7 @@ export default function Hero() {
         <div className="flex flex-col items-center text-center">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs sm:text-sm font-bold uppercase tracking-wider mb-4">
             <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-            <span>FREE WHATSAPP CLASS • 18TH OCTOBER</span>
+            <span>FREE 3-DAY WHATSAPP CLASS • 18TH – 20TH OCTOBER</span>
           </div>
 
           {/* Main Headline */}
@@ -37,8 +37,8 @@ export default function Hero() {
               Never used Photoshop before? No problem.
             </p>
             <p>
-              Join me for a free beginner-friendly WhatsApp class where I’ll walk you through
-              graphic design, Photoshop and the process of creating your very first design.
+              Join me for a free beginner-friendly 3-day WhatsApp class where I’ll walk you through
+              graphic design, Photoshop and the step-by-step process of creating your very first design without rushing.
             </p>
           </div>
 
@@ -58,7 +58,7 @@ export default function Hero() {
             </span>
             <span className="flex items-center gap-1.5 bg-white/[0.04] px-3.5 py-1.5 rounded-full border border-white/10">
               <CheckCircle2 className="w-3.5 h-3.5 text-orange-400 shrink-0" />
-              <span>Live beginner walkthrough</span>
+              <span>Live 3-day beginner pace</span>
             </span>
           </div>
 
@@ -69,10 +69,10 @@ export default function Hero() {
               <div className="p-3 sm:p-4 rounded-xl bg-[#151726] border border-white/5">
                 <div className="flex items-center gap-1.5 text-neutral-400 text-xs font-mono mb-1">
                   <Calendar className="w-3.5 h-3.5 text-orange-400" />
-                  <span>DATE</span>
+                  <span>DATES (3 DAYS)</span>
                 </div>
                 <div className="font-display font-bold text-sm sm:text-base text-white tracking-tight">
-                  18TH OCTOBER 2026
+                  18TH – 20TH OCT 2026
                 </div>
               </div>
 

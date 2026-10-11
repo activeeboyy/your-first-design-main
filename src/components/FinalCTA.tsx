@@ -79,7 +79,7 @@ export default function FinalCTA() {
               <span className="text-neutral-600">·</span>
               <span>Beginner Friendly</span>
               <span className="text-neutral-600">·</span>
-              <span>Live on WhatsApp</span>
+              <span>Live on WhatsApp & YouTube</span>
             </div>
           </div>
         </div>

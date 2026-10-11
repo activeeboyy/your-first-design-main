@@ -66,7 +66,7 @@ export default function EventDetails() {
               </div>
               <div>
                 <div className="text-xs text-neutral-400 font-mono uppercase">LOCATION</div>
-                <div className="font-display font-bold text-base sm:text-lg text-emerald-400">LIVE ON WHATSAPP</div>
+                <div className="font-display font-bold text-base sm:text-lg text-emerald-400">LIVE ON WHATSAPP & YOUTUBE</div>
               </div>
             </div>
 

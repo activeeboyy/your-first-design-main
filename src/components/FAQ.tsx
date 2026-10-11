@@ -25,7 +25,7 @@ const faqs: FAQItem[] = [
   {
     question: 'Where will the class take place?',
     answer:
-      'The class takes place live on WhatsApp inside our private group. You’ll receive updates, links, and direct guidance inside the group.',
+      'The class takes place live on WhatsApp and YouTube inside our private community. You’ll receive livestream links, updates, and direct guidance inside the WhatsApp group.',
   },
   {
     question: 'What time does the class start and how is it scheduled?',

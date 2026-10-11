@@ -1,6 +1,7 @@
 import { WHATSAPP_GROUP_LINK } from '../data/constants';
 import { trackWhatsAppLead } from '../utils/analytics';
 import Countdown from './Countdown';
+import whatsappProofImg from '../assets/images/whatsapp_proof_sq_1791750704144.jpg';
 import {
   Calendar,
   Clock,
@@ -94,7 +95,7 @@ export default function Hero() {
                   <span>VENUE</span>
                 </div>
                 <div className="font-display font-bold text-sm sm:text-base text-emerald-400 tracking-tight">
-                  LIVE ON WHATSAPP
+                  LIVE ON WHATSAPP & YOUTUBE
                 </div>
               </div>
 
@@ -153,7 +154,7 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
               </span>
-              <span>As at today we have 200+ members already, what are you waiting for?</span>
+              <span>200+ members already, what are you waiting for?</span>
             </div>
 
             {/* Image Placeholder Frame */}
@@ -167,7 +168,7 @@ export default function Hero() {
               <div className="p-2 sm:p-4">
                 <div className="relative w-full rounded-xl overflow-hidden bg-[#0c0e17] border border-white/10 aspect-[1179/1061] flex items-center justify-center">
                   <img
-                    src="/src/assets/images/whatsapp_proof_sq_1791750704144.jpg"
+                    src={whatsappProofImg}
                     alt="WhatsApp Class - 200+ members already joined"
                     referrerPolicy="no-referrer"
                     width={1179}
@@ -176,15 +177,6 @@ export default function Hero() {
                     className="w-full h-full object-contain group-hover:scale-[1.01] transition-transform duration-300"
                   />
                 </div>
-              </div>
-              <div className="px-4 py-3 bg-white/[0.03] border-t border-white/5 flex items-center justify-between text-xs text-neutral-300">
-                <div className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                  <span className="font-semibold text-white">Live WhatsApp Class Community</span>
-                </div>
-                <span className="text-emerald-400 font-bold group-hover:underline flex items-center gap-1">
-                  200+ Members Joined · Tap to Join →
-                </span>
               </div>
             </a>
           </div>

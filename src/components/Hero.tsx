@@ -144,6 +144,50 @@ export default function Hero() {
               <span>WhatsApp Class</span>
             </div>
           </div>
+
+          {/* Social Proof & 200+ Members Image Placeholder */}
+          <div className="mt-8 max-w-[1179px] w-full mx-auto flex flex-col items-center">
+            {/* Callout Notice */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs sm:text-sm font-bold shadow-lg mb-4 text-center">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+              </span>
+              <span>As at today we have 200+ members already, what are you waiting for?</span>
+            </div>
+
+            {/* Image Placeholder Frame */}
+            <a
+              href={WHATSAPP_GROUP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => trackWhatsAppLead(e, WHATSAPP_GROUP_LINK)}
+              className="group relative w-full max-w-[1179px] rounded-2xl overflow-hidden border border-emerald-500/30 bg-[#121422]/95 shadow-2xl backdrop-blur-sm hover:border-emerald-500/70 hover:shadow-emerald-500/20 transition-all duration-300 block"
+            >
+              <div className="p-2 sm:p-4">
+                <div className="relative w-full rounded-xl overflow-hidden bg-[#0c0e17] border border-white/10 aspect-[1179/1061] flex items-center justify-center">
+                  <img
+                    src="/src/assets/images/whatsapp_proof_sq_1791750704144.jpg"
+                    alt="WhatsApp Class - 200+ members already joined"
+                    referrerPolicy="no-referrer"
+                    width={1179}
+                    height={1061}
+                    style={{ aspectRatio: '1179 / 1061' }}
+                    className="w-full h-full object-contain group-hover:scale-[1.01] transition-transform duration-300"
+                  />
+                </div>
+              </div>
+              <div className="px-4 py-3 bg-white/[0.03] border-t border-white/5 flex items-center justify-between text-xs text-neutral-300">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span className="font-semibold text-white">Live WhatsApp Class Community</span>
+                </div>
+                <span className="text-emerald-400 font-bold group-hover:underline flex items-center gap-1">
+                  200+ Members Joined · Tap to Join →
+                </span>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>

@@ -2,7 +2,7 @@
  * Global Analytics & Automatic WhatsApp Link Tracking
  * Supports:
  *  - Meta (Facebook) Pixel: ID 1270731831846532 (fbq('track', 'Lead'))
- *  - TikTok Pixel: ID DB6H3PJC77UAU0U4FO9G (ttq.track('Contact'))
+ *  - TikTok Pixel: ID DB6KI6RC77UD59ISI8QG (ttq.track('Contact'))
  *
  * Automatic link detection recognizes any link pointing to WhatsApp destinations:
  *  - chat.whatsapp.com

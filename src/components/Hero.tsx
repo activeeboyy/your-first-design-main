@@ -175,8 +175,8 @@ export default function Hero() {
                         src={whatsappProofImg}
                         alt="WhatsApp Class - your first photoshop design - 229 members already joined"
                         referrerPolicy="no-referrer"
-                        width={1125}
-                        height={1200}
+                        width={1179}
+                        height={1061}
                         className="w-full h-auto block object-cover group-hover:scale-[1.01] transition-transform duration-300"
                       />
                     </div>

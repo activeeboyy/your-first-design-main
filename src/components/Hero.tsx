@@ -12,6 +12,7 @@ import {
 } from 'lucide-react';
 
 export default function Hero() {
+
   return (
     <section className="relative pt-12 pb-20 sm:pt-20 sm:pb-28 lg:pt-24 lg:pb-32 overflow-hidden bg-[#090A0F] bg-grid-pattern w-full max-w-full">
       {/* Background radial glowing auras clipped to section */}
@@ -157,28 +158,32 @@ export default function Hero() {
               <span>200+ members already, what are you waiting for?</span>
             </div>
 
-            {/* Image Placeholder Frame */}
-            <a
-              href={WHATSAPP_GROUP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={(e) => trackWhatsAppLead(e, WHATSAPP_GROUP_LINK)}
-              className="group relative w-full max-w-[1179px] rounded-2xl overflow-hidden border border-emerald-500/30 bg-[#121422]/95 shadow-2xl backdrop-blur-sm hover:border-emerald-500/70 hover:shadow-emerald-500/20 transition-all duration-300 block"
-            >
-              <div className="p-2 sm:p-4">
-                <div className="relative w-full rounded-xl overflow-hidden bg-[#0c0e17] border border-white/10 aspect-[1179/1061] flex items-center justify-center">
-                  <img
-                    src={whatsappProofImg}
-                    alt="WhatsApp Class - 200+ members already joined"
-                    referrerPolicy="no-referrer"
-                    width={1179}
-                    height={1061}
-                    style={{ aspectRatio: '1179 / 1061' }}
-                    className="w-full h-full object-contain group-hover:scale-[1.01] transition-transform duration-300"
-                  />
-                </div>
+            {/* Image Frame placing the image seamlessly in the placeholder */}
+            <div className="relative w-full max-w-[1179px]">
+              <div className="relative w-full rounded-2xl overflow-hidden border border-emerald-500/30 bg-[#121422] shadow-2xl shadow-emerald-950/40 backdrop-blur-sm transition-all duration-300 hover:border-emerald-500/60 group">
+                <a
+                  href={WHATSAPP_GROUP_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => trackWhatsAppLead(e, WHATSAPP_GROUP_LINK)}
+                  className="group relative w-full block cursor-pointer"
+                  title="Click to join the WhatsApp class"
+                >
+                  <div className="w-full">
+                    <div className="relative w-full overflow-hidden">
+                      <img
+                        src={whatsappProofImg}
+                        alt="WhatsApp Class - 200+ members already joined"
+                        referrerPolicy="no-referrer"
+                        width={1179}
+                        height={1054}
+                        className="w-full h-auto block object-cover group-hover:scale-[1.01] transition-transform duration-300"
+                      />
+                    </div>
+                  </div>
+                </a>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>

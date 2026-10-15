@@ -1,7 +1,7 @@
 import { WHATSAPP_GROUP_LINK } from '../data/constants';
 import { trackWhatsAppLead } from '../utils/analytics';
 import Countdown from './Countdown';
-import whatsappProofImg from '../assets/images/IMG_4693.jpg';
+import whatsappProofImg from '../assets/images/IMG_4736.jpg';
 import {
   Calendar,
   Clock,
@@ -155,7 +155,7 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
               </span>
-              <span>229 members already, what are you waiting for?</span>
+              <span>300+ members already! what are you waiting for?</span>
             </div>
 
             {/* Image Frame placing the image seamlessly in the placeholder */}
@@ -173,10 +173,10 @@ export default function Hero() {
                     <div className="relative w-full overflow-hidden bg-black flex items-center justify-center">
                       <img
                         src={whatsappProofImg}
-                        alt="WhatsApp Class - your first photoshop design - 229 members already joined"
+                        alt="WhatsApp Class - your first photoshop design - 330 members already joined"
                         referrerPolicy="no-referrer"
-                        width={1179}
-                        height={1061}
+                        width={1125}
+                        height={1200}
                         className="w-full h-auto block object-cover group-hover:scale-[1.01] transition-transform duration-300"
                       />
                     </div>

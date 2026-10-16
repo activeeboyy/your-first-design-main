@@ -8,60 +8,33 @@ interface TimeLeft {
   seconds: number;
 }
 
+const TARGET_TIMESTAMP = new Date(EVENT_DETAILS.targetIsoDate).getTime();
+
+function getTimeRemaining(): TimeLeft {
+  const difference = TARGET_TIMESTAMP - Date.now();
+  if (difference > 0) {
+    return {
+      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+      minutes: Math.floor((difference / 1000 / 60) % 60),
+      seconds: Math.floor((difference / 1000) % 60),
+    };
+  }
+  return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+}
+
 export default function Countdown() {
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>({
-    days: 10,
-    hours: 7,
-    minutes: 49,
-    seconds: 30,
-  });
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>(getTimeRemaining);
 
   useEffect(() => {
-    const STORAGE_KEY = 'yfd_countdown_10d_target';
-    let target = 0;
+    // Clear out any old fake 10-day countdown storage keys
     try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved) {
-        target = Number(saved);
-      }
-    } catch {
-      // Fallback
-    }
+      localStorage.removeItem('yfd_countdown_10d_target');
+    } catch {}
 
-    if (!target || target <= Date.now()) {
-      const fixedTarget = new Date(EVENT_DETAILS.targetIsoDate).getTime();
-      const diffDays = Math.floor((fixedTarget - Date.now()) / (1000 * 60 * 60 * 24));
-      
-      if (diffDays === 10) {
-        target = fixedTarget;
-      } else {
-        // Anchor to 10 days, 7 hours, 49 mins
-        target = Date.now() + (10 * 24 * 3600 + 7 * 3600 + 49 * 60 + 30) * 1000;
-      }
-
-      try {
-        localStorage.setItem(STORAGE_KEY, String(target));
-      } catch {}
-    }
-
-    const calculateTime = () => {
-      const now = Date.now();
-      const difference = target - now;
-
-      if (difference > 0) {
-        setTimeLeft({
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-          minutes: Math.floor((difference / 1000 / 60) % 60),
-          seconds: Math.floor((difference / 1000) % 60),
-        });
-      } else {
-        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-      }
-    };
-
-    calculateTime();
-    const interval = setInterval(calculateTime, 1000);
+    const interval = setInterval(() => {
+      setTimeLeft(getTimeRemaining());
+    }, 1000);
     return () => clearInterval(interval);
   }, []);
 

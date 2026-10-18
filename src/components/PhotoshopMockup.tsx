@@ -208,7 +208,7 @@ export default function PhotoshopMockup() {
                 <span className="text-[10px] tracking-[0.25em] font-mono-num uppercase text-cyan-400 font-semibold block">
                   LIVE WORKSHOP
                 </span>
-                <span className="text-xs text-neutral-400 font-medium">OCTOBER 18 – 20 · 8:00 PM</span>
+                <span className="text-xs text-neutral-400 font-medium">NOVEMBER 27 – 29 · 8:00 PM</span>
               </div>
               <div className="text-right">
                 <span className="text-[10px] font-mono-num text-neutral-500">100% FREE</span>

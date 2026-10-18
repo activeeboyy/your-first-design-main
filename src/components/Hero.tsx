@@ -1,7 +1,7 @@
 import { WHATSAPP_GROUP_LINK } from '../data/constants';
 import { trackWhatsAppLead } from '../utils/analytics';
 import Countdown from './Countdown';
-import whatsappProofImg from '../assets/images/IMG_4736.jpg';
+import whyHostingClassImg from '../assets/images/why_hosting_class.png';
 import {
   Calendar,
   Clock,
@@ -74,7 +74,7 @@ export default function Hero() {
                   <span>DATES (3 DAYS)</span>
                 </div>
                 <div className="font-display font-bold text-sm sm:text-base text-white tracking-tight">
-                  18TH – 20TH OCT 2026
+                  27TH – 29TH NOV 2026
                 </div>
               </div>
 
@@ -147,42 +147,38 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Social Proof & 229 Members Screenshot */}
-          <div className="mt-8 max-w-[1179px] w-full mx-auto flex flex-col items-center">
-            {/* Callout Notice */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs sm:text-sm font-bold shadow-lg mb-4 text-center">
+          {/* This is why I'm hosting this class - Screenshot Placeholder */}
+          <div className="mt-10 max-w-xl w-full mx-auto flex flex-col items-center">
+            {/* Callout Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs sm:text-sm font-bold shadow-lg mb-4 text-center">
               <span className="relative flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-orange-500"></span>
               </span>
-              <span>300+ members already! what are you waiting for?</span>
+              <span>This is why I&apos;m hosting this class</span>
             </div>
 
-            {/* Image Frame placing the image seamlessly in the placeholder */}
-            <div className="relative w-full max-w-[1179px]">
-              <div className="relative w-full rounded-2xl overflow-hidden border border-emerald-500/30 bg-[#000000] shadow-2xl shadow-emerald-950/40 backdrop-blur-sm transition-all duration-300 hover:border-emerald-500/60 group">
-                <a
-                  href={WHATSAPP_GROUP_LINK}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => trackWhatsAppLead(e, WHATSAPP_GROUP_LINK)}
-                  className="group relative w-full block cursor-pointer"
-                  title="Click to join the WhatsApp class"
-                >
-                  <div className="w-full">
-                    <div className="relative w-full overflow-hidden bg-black flex items-center justify-center">
-                      <img
-                        src={whatsappProofImg}
-                        alt="WhatsApp Class - your first photoshop design - 330 members already joined"
-                        referrerPolicy="no-referrer"
-                        width={1125}
-                        height={1200}
-                        className="w-full h-auto block object-cover group-hover:scale-[1.01] transition-transform duration-300"
-                      />
-                    </div>
-                  </div>
-                </a>
-              </div>
+            {/* Image Frame placing the image in a high-contrast placeholder */}
+            <div className="relative w-full rounded-2xl overflow-hidden border-2 border-orange-500/35 bg-[#0B141A] shadow-2xl shadow-orange-500/20 backdrop-blur-sm transition-all duration-300 hover:border-orange-500/60 group">
+              <a
+                href={WHATSAPP_GROUP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => trackWhatsAppLead(e, WHATSAPP_GROUP_LINK)}
+                className="group relative w-full block cursor-pointer"
+                title="Click to join the WhatsApp class"
+              >
+                <div className="w-full relative flex items-center justify-center p-2 sm:p-3 bg-[#0B141A]">
+                  <img
+                    src={whyHostingClassImg}
+                    alt="Conversation screenshot: 'Not at all, I don't even understand it' - This is why I'm hosting this class"
+                    referrerPolicy="no-referrer"
+                    width={960}
+                    height={1100}
+                    className="w-full max-w-[540px] h-auto block rounded-xl shadow-lg group-hover:scale-[1.01] transition-transform duration-300"
+                  />
+                </div>
+              </a>
             </div>
           </div>
         </div>

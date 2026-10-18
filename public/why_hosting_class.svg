@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1100" width="960" height="1100" style="background:#0b141a; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- WhatsApp subtle doodle pattern -->
+    <pattern id="whatsappPattern" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M20,20 Q30,10 40,20 T60,20" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.035"/>
+      <circle cx="80" cy="30" r="8" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.035"/>
+      <path d="M30,80 L45,65 L60,80 Z" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.035"/>
+      <rect x="85" y="75" width="16" height="16" rx="4" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.035"/>
+      <path d="M10,105 Q25,95 40,105" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.035"/>
+    </pattern>
+  </defs>
+
+  <!-- Dark Background -->
+  <rect width="960" height="1100" fill="#0b141a" rx="24"/>
+  <rect width="960" height="1100" fill="url(#whatsappPattern)" rx="24"/>
+
+  <!-- Outer Orange Border -->
+  <rect x="4" y="4" width="952" height="1092" fill="none" stroke="#ff6b00" stroke-width="8" rx="20"/>
+
+  <!-- 1. Outgoing Message: you're welcome; used photoshop before? -->
+  <g transform="translate(310, 25)">
+    <path d="M16,0 L610,0 C618,0 626,8 626,16 L626,104 C626,112 618,120 610,120 L16,120 C8,120 0,112 0,104 L0,16 C0,8 8,0 16,0 Z" fill="#005c4b"/>
+    <!-- Chat bubble tail on top right -->
+    <path d="M626,0 L642,8 L626,20 Z" fill="#005c4b"/>
+    <text x="30" y="52" fill="#e9edef" font-size="34" font-weight="400">you’re welcome; used photoshop</text>
+    <text x="30" y="94" fill="#e9edef" font-size="34" font-weight="400">before?</text>
+    <!-- Time & double check -->
+    <text x="480" y="106" fill="#8696a0" font-size="20">12:15 PM</text>
+    <path d="M578,100 L585,107 L598,92 M588,100 L595,107 L608,92" fill="none" stroke="#53bdeb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 2. Incoming Message: Reply to used photoshop before? -->
+  <g transform="translate(40, 175)">
+    <!-- Bubble Background -->
+    <rect x="0" y="0" width="660" height="280" rx="20" fill="#202c33"/>
+    <!-- Chat bubble tail on top left -->
+    <path d="M0,0 L-14,8 L0,20 Z" fill="#202c33"/>
+
+    <!-- Quoted Box -->
+    <g transform="translate(16, 16)">
+      <rect x="0" y="0" width="628" height="95" rx="10" fill="#182229"/>
+      <!-- Blue Accent Line on left -->
+      <path d="M0,10 Q0,0 10,0 L10,95 Q0,95 0,85 Z" fill="#53bdeb"/>
+      <text x="24" y="38" fill="#53bdeb" font-size="26" font-weight="600">You</text>
+      <text x="24" y="74" fill="#8696a0" font-size="26">you’re welcome; used photoshop before?</text>
+    </g>
+
+    <!-- Highlighted User Answer: Not at all, I don't even understand it -->
+    <g transform="translate(16, 130)">
+      <!-- Orange Highlight Box around answer -->
+      <rect x="0" y="0" width="628" height="105" rx="16" fill="none" stroke="#ff6b00" stroke-width="5"/>
+      <text x="22" y="60" fill="#e9edef" font-size="34" font-weight="500">Not at all, I don&apos;t even understand it</text>
+      <text x="500" y="90" fill="#8696a0" font-size="20">12:16 PM</text>
+    </g>
+  </g>
+
+  <!-- Big Curved Orange Arrow pointing to the highlighted answer -->
+  <g transform="translate(710, 180)">
+    <!-- Curved arrow path -->
+    <path d="M150,10 C160,80 120,150 20,200" fill="none" stroke="#ff7a00" stroke-width="16" stroke-linecap="round"/>
+    <!-- Arrowhead -->
+    <path d="M48,150 L10,206 L70,210 Z" fill="#ff7a00" stroke="#ff7a00" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 3. Outgoing Message: not to worry this is the class you need -->
+  <g transform="translate(265, 485)">
+    <path d="M16,0 L650,0 C658,0 666,8 666,16 L666,104 C666,112 658,120 650,120 L16,120 C8,120 0,112 0,104 L0,16 C0,8 8,0 16,0 Z" fill="#005c4b"/>
+    <!-- Tail on right -->
+    <path d="M666,0 L682,8 L666,20 Z" fill="#005c4b"/>
+    <!-- Emoji + Text -->
+    <text x="30" y="54" font-size="34">😅</text>
+    <text x="80" y="54" fill="#e9edef" font-size="34" font-weight="400">not to worry this is the class you</text>
+    <text x="30" y="96" fill="#e9edef" font-size="34" font-weight="400">need</text>
+    <!-- Time & double check -->
+    <text x="520" y="106" fill="#8696a0" font-size="20">12:16 PM</text>
+    <path d="M618,100 L625,107 L638,92 M628,100 L635,107 L648,92" fill="none" stroke="#53bdeb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 4. Incoming Message: Thank you Sir 🙏 -->
+  <g transform="translate(40, 635)">
+    <rect x="0" y="0" width="660" height="225" rx="20" fill="#202c33"/>
+    <!-- Tail on left -->
+    <path d="M0,0 L-14,8 L0,20 Z" fill="#202c33"/>
+
+    <!-- Quoted Box -->
+    <g transform="translate(16, 16)">
+      <rect x="0" y="0" width="628" height="95" rx="10" fill="#182229"/>
+      <!-- Blue Accent Line on left -->
+      <path d="M0,10 Q0,0 10,0 L10,95 Q0,95 0,85 Z" fill="#53bdeb"/>
+      <text x="24" y="38" fill="#53bdeb" font-size="26" font-weight="600">You</text>
+      <text x="24" y="74" font-size="26">😅</text>
+      <text x="60" y="74" fill="#8696a0" font-size="26">not to worry this is the class you need</text>
+    </g>
+
+    <!-- Text: Thank you Sir 🙏 -->
+    <text x="36" y="168" fill="#e9edef" font-size="36" font-weight="600">Thank you Sir <tspan font-size="36">🙏</tspan></text>
+    <text x="540" y="188" fill="#8696a0" font-size="20">12:16 PM</text>
+  </g>
+
+  <!-- Bottom WhatsApp Bar -->
+  <g transform="translate(30, 935)">
+    <!-- Plus Icon (Left) -->
+    <circle cx="35" cy="35" r="26" fill="none" stroke="#8696a0" stroke-width="4"/>
+    <path d="M35,21 L35,49 M21,35 L49,35" stroke="#8696a0" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Sticker / Curled Paper Icon -->
+    <g transform="translate(650, 12)">
+      <rect x="0" y="0" width="46" height="46" rx="12" fill="none" stroke="#8696a0" stroke-width="3.5"/>
+      <path d="M28,46 L46,28 L34,28 Q28,28 28,34 Z" fill="#8696a0"/>
+    </g>
+
+    <!-- Camera Icon -->
+    <g transform="translate(770, 14)">
+      <path d="M10,12 L16,4 L38,4 L44,12 L50,12 Q54,12 54,16 L54,42 Q54,46 50,46 L4,46 Q0,46 0,42 L0,16 Q0,12 4,12 Z" fill="none" stroke="#8696a0" stroke-width="3.5"/>
+      <circle cx="27" cy="28" r="10" fill="none" stroke="#8696a0" stroke-width="3.5"/>
+    </g>
+
+    <!-- Mic Icon in Circle (Right) -->
+    <g transform="translate(855, 6)">
+      <circle cx="28" cy="28" r="28" fill="#ffffff"/>
+      <!-- Mic icon in dark -->
+      <path d="M28,15 Q23,15 23,20 L23,28 Q23,33 28,33 Q33,33 33,28 L33,20 Q33,15 28,15 Z" fill="#0b141a"/>
+      <path d="M19,26 Q19,37 28,37 Q37,37 37,26" fill="none" stroke="#0b141a" stroke-width="3" stroke-linecap="round"/>
+      <line x1="28" y1="37" x2="28" y2="42" stroke="#0b141a" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>

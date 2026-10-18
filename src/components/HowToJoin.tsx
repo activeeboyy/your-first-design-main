@@ -18,8 +18,8 @@ const joinSteps = [
   {
     number: '03',
     icon: Laptop,
-    title: 'SHOW UP ON 18TH OCTOBER',
-    desc: 'Come ready with your laptop for our 3-day class (18th – 20th Oct) and let’s create your first Photoshop design together without rushing.',
+    title: 'SHOW UP ON 27TH NOVEMBER',
+    desc: 'Come ready with your laptop for our 3-day class (27th – 29th Nov) and let’s create your first Photoshop design together without rushing.',
   },
 ];
 

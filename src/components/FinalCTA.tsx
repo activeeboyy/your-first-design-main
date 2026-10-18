@@ -41,7 +41,7 @@ export default function FinalCTA() {
           <div className="hidden sm:flex mt-6 flex-wrap items-center justify-center gap-3 sm:gap-6 text-xs sm:text-sm font-mono text-neutral-300">
             <span className="flex items-center gap-1.5 bg-white/[0.04] px-3.5 py-1.5 rounded-full border border-white/10">
               <Calendar className="w-4 h-4 text-orange-400" />
-              18th – 20th October 2026
+              27th – 29th November 2026
             </span>
             <span className="flex items-center gap-1.5 bg-white/[0.04] px-3.5 py-1.5 rounded-full border border-white/10">
               <Clock className="w-4 h-4 text-amber-400" />

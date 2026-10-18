@@ -46,7 +46,7 @@ export default function EventDetails() {
               </div>
               <div>
                 <div className="text-xs text-neutral-400 font-mono uppercase">DATES (3 DAYS)</div>
-                <div className="font-display font-bold text-base sm:text-lg text-white">18TH – 20TH OCTOBER 2026</div>
+                <div className="font-display font-bold text-base sm:text-lg text-white">27TH – 29TH NOVEMBER 2026</div>
               </div>
             </div>
 

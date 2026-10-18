@@ -46,7 +46,7 @@ export default function Countdown() {
           {String(timeLeft.days).padStart(2, '0')}
         </span>
         <span className="text-[9px] sm:text-[10px] font-medium tracking-wider text-neutral-400 uppercase mt-0.5">
-          Day
+          {timeLeft.days === 1 ? 'Day' : 'Days'}
         </span>
       </div>
 

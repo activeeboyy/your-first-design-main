@@ -171,10 +171,10 @@ export default function Hero() {
                 <div className="w-full relative flex items-center justify-center p-2 sm:p-3 bg-[#0B141A]">
                   <img
                     src={whyHostingClassImg}
-                    alt="Conversation screenshot: 'Not at all, I don't even understand it' - This is why I'm hosting this class"
+                    alt="Real conversation screenshot: 'Not at all, I don't even understand it' - This is why I'm hosting this class"
                     referrerPolicy="no-referrer"
-                    width={960}
-                    height={1100}
+                    width={3684}
+                    height={4112}
                     className="w-full max-w-[540px] h-auto block rounded-xl shadow-lg group-hover:scale-[1.01] transition-transform duration-300"
                   />
                 </div>

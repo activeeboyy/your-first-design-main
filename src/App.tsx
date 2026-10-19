@@ -2,6 +2,7 @@ import Hero from './components/Hero';
 import TheHook from './components/TheHook';
 import WhatWeWillDo from './components/WhatWeWillDo';
 import TheExperience from './components/TheExperience';
+import Reviews from './components/Reviews';
 import WhoIsThisFor from './components/WhoIsThisFor';
 import WhoIsNotFor from './components/WhoIsNotFor';
 import MeetFranklin from './components/MeetFranklin';
@@ -20,6 +21,7 @@ export default function App() {
         <TheHook />
         <WhatWeWillDo />
         <TheExperience />
+        <Reviews />
         <WhoIsThisFor />
         <WhoIsNotFor />
         <MeetFranklin />
